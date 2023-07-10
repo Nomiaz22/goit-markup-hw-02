@@ -1,0 +1,19 @@
+.menu .link {
+  color: teal;
+}
+
+.menu .link:hover {
+  color: blue;
+}
+
+.menu .link:focus {
+  color: orange;
+}
+
+.menu .link:active {
+  color: brown;
+}
+
+/* .menu .link:visited {
+  color: blueviolet;
+} */
