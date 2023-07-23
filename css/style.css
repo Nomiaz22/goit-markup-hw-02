@@ -5,17 +5,24 @@
   --navyblue: #2e2f42;
   --slate: #434455;
   --cornflower: #e7e9fc;
+  --ocean: #404bbf;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
 }
 
 .main-link {
   color: var(--iris);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 1.16; /* 116.667% */
   letter-spacing: 0.54px;
@@ -25,11 +32,20 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
-  color: var(--navyblue);
+  color: inherit;
+}
+
+.current-page {
+  color: var(--iris);
+}
+.header-link {
+  font-weight: 500;
 }
 
 .link:hover,
@@ -37,19 +53,17 @@ body {
   color: var(--iris);
 }
 
-/* ocean */
 .link:active {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
-.service {
+.hero {
   background-color: var(--navyblue);
 }
 
-.service-title {
+.hero-title {
   color: var(--white);
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 1.12px;
@@ -58,7 +72,6 @@ body {
 .section-title {
   color: var(--navyblue);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.72px;
@@ -68,37 +81,27 @@ body {
 .button-order {
   background: var(--iris);
   color: var(--white);
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5; /* 150% */
+  border: none;
+  border-radius: 4px;
   letter-spacing: 0.64px;
   cursor: pointer;
 }
 
 .button-order:hover,
 .button-order:focus {
-  background: var(--white);
-  color: var(--iris);
+  background: var(--ocean);
 }
 
 .title-item {
   color: var(--navyblue);
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
-}
-
-.text-item {
-  color: var(--slate);
-  font-size: 16px;
-  /* font-style: normal;
-  font-weight: 400; */
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.32px;
 }
 
 .team {
@@ -109,21 +112,13 @@ body {
   background: var(--white);
 }
 
-.footer {
-  background: var(--navyblue);
-}
-
-.footer-item-text {
-  color: var(--cloud);
-}
-
 .buttons-port {
   color: var(--iris);
   background: var(--cloud);
   border: 1px solid var(--cornflower);
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
-  font-style: normal;
+  border-radius: 4px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.64px;
@@ -131,7 +126,19 @@ body {
 }
 
 .buttons-port:hover,
-.buttons-port:focus {
+.buttons-port:focus,
+.current-filter {
+  color: var(--white);
+  background: var(--ocean);
+  border-color: var(--ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background: var(--navyblue);
+}
+
+.footer-item-text {
   color: var(--cloud);
-  background: var(--iris);
 }
